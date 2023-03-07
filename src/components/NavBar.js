@@ -6,25 +6,19 @@ import { NavLink } from "react-router-dom";
 const linkStyle = {
     margin: "1rem",
     textDecoration: "none",
-    color: 'blue',
+    color: 'green',
     textdecoration: "none",
-    textalign: "center"
+    
 }
 
 function NavBar(){
 
-    const [route, setRoute] = useState('/')
-
-
-
     return (
-        <div class="ui tabular menu">
+        <div >
             <NavLink
                 to="/"
                 exact
-                style={linkStyle}
-                class="active item"
-                onClick={setRoute('/')}
+                style={linkStyle} 
             >
                 Home
             </NavLink>
@@ -32,8 +26,7 @@ function NavBar(){
                 to="/destinations"
                 exact
                 style={linkStyle}
-                class="active item"
-                onClick={setRoute('/destinations')}
+                
             >
                 Destinations
             </NavLink>
@@ -41,7 +34,6 @@ function NavBar(){
                 to="/travel-stories"
                 exact
                 style={linkStyle}
-                class="active item"
             >
                 Travel Stories
             </NavLink>
