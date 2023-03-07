@@ -1,21 +1,8 @@
 import React, {useState, useEffect} from "react";
-import StoryCard from "./StoryCard";
-import { Button, Form, Message, Dropdown } from 'semantic-ui-react'
+import { Button, Form, Message,} from 'semantic-ui-react'
 
-function Stories(){
-    //Story Posts
-    const [ stories, setStories] = useState([]);
+function TellUsYourStories({handleNewStories}){
 
-    useEffect(() => {
-        fetch("http://localhost:3001/stories")
-        .then(r => r.json())
-        .then(data => setStories(data))   
-    }, [])
-
-    const storyComponent = stories.map (story => {
-        return <StoryCard key={story.id} {...story} />
-        })
-    
     //Form
     const [ name, setName] = useState("")
     const [ country, setCountry] = useState("")
@@ -23,7 +10,7 @@ function Stories(){
     const [ rating, setRating] = useState("")
 
     const handleNameChange = (e) => setName(e.target.value)
-    const handleCountryChange = (e) => setCountry(e.target.value)
+    const handleCountryChange = (e)  => setCountry(e.target.value)
     const handleCommentChange = (e) => setStory(e.target.value)
     const handleRatingChange = (e) => setRating(e.target.value)
     
@@ -49,7 +36,7 @@ function Stories(){
         })
             .then((r) => r.json())
             .then((data) => {
-                setStories([...stories, data])
+                handleNewStories(data)
                 setName("")
                 setCountry("")
                 setStory("")
@@ -60,9 +47,10 @@ function Stories(){
 
 
     return (
-        <div>
-            <h1>Travel Stories</h1>
-            <Form success onSubmit={handleSubmit} className="" contentAlign="center">Tell Us What You Think!
+        <div style={{ maxWidth: "600px", margin: "0 auto"}}>
+            <h1 style={{ textAlign: "center" }}>Tell Us Your Story</h1>
+        
+            <Form success onSubmit={handleSubmit} className="" contentAlign="center">
                 <Form.Input
                     label="Name"
                     placeholder="Enter Your Name..."
@@ -79,7 +67,7 @@ function Stories(){
                         <option value="">Select Your Country</option>   
                         <option value="France">France</option>
                         <option value="Germany">Germany</option>
-                        <option value="Portugal">Protugal</option>
+                        <option value="Portugal">Portugal</option>
                         <option value="Spain">Spain</option>
                         <option value="Italy">Italy</option>
 
@@ -107,10 +95,11 @@ function Stories(){
                 </Form.Field>
                 <Button>Submit</Button>
             </Form>
+       
             {showMessage}
-            {storyComponent}
+            
         </div>
     );
 }
 
-export default Stories;
+export default TellUsYourStories;

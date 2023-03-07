@@ -1,4 +1,4 @@
-import { Image } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import { useState } from 'react'
 
 const Front = ({country, image}) => {
@@ -12,11 +12,13 @@ const Front = ({country, image}) => {
 
 const Back=({country, capital, food})=>{
     return (
-        <div>
-            <h1>{country}</h1>
-            <h2>{capital}</h2>
-            <h2>{food}</h2>
-        </div>
+        <Card centered style={{width: '100%'}}>
+        <Card.Content>
+            <Card.Header>{country}</Card.Header>
+            <Card.Meta>{capital}</Card.Meta>
+            <Card.Description>{food}</Card.Description>
+        </Card.Content>
+        </Card>
     )
 }
 

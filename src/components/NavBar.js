@@ -31,10 +31,21 @@ function NavBar(){
                 Destinations
             </NavLink>
             <NavLink
-                to="/travel-stories"
+                to="/story-form"
                 exact
                 style={linkStyle}
             >
+ 
+                Tell Us Your Story
+            </NavLink>
+            <NavLink
+                to="/stories"
+                exact
+                style={linkStyle}
+                
+            >
+
+
                 Travel Stories
             </NavLink>
         

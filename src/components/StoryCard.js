@@ -1,14 +1,26 @@
-function StoryCard({name, comment, rating }){
+import { Card } from 'semantic-ui-react'; 
+function StoryCard({name, country, story, rating }){
+
 
  
     return(
-        <div>
-            <h1>{name}</h1>
-            <h2>{comment}</h2>
-            <h2>{rating}</h2>
+        
+    
+   
+      
+        <Card centered style={{width: '80%'}}>
+        <Card.Content>
+            <Card.Header>{name}</Card.Header>
+            <Card.Meta>{country}</Card.Meta>
+            <Card.Description>{story}</Card.Description>
+            <Card.Description>{rating}</Card.Description>
+        </Card.Content>
          
-        </div>
+        </Card>
+    
+        
     )
 }
 
 export default StoryCard;
+
