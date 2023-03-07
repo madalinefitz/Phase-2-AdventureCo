@@ -56,8 +56,8 @@
     {
       "name": "Mike S.",
       "country": "Spain",
-      "comment": "Had the best time in Barcelona with my now fiance! The music, the food the culture, we were speachless.  ",
-      "rating": "⭐⭐⭐⭐⭐",
+      "comment": "Had a nice time in Barcelona with my now fiance! The music, the food the culture, we were speachless. watch out for the pick pockets. We had to have a tour of the American Consulate, but thankfully we were able to get back home. Now it is time to plan a wedding. ",
+      "rating": "⭐⭐",
       "id": 3
     },
     {
@@ -70,56 +70,56 @@
     {
       "name": "Cat M.",
       "country": "Italy",
-      "comment": "", 
+      "comment": "I felt like I was transported back in time! The Colosseum and Vatican City were breathtaking, and the pizza and gelato were out of this world. Don't forget to take a day trip outside of the city for a taste of local life.", 
       "rating": "⭐⭐⭐⭐⭐",
       "id": 5
     },
     {
       "name": "Madaline F.",
       "country": "Portugal",
-      "comment": "",
+      "comment": "Lisbon - Colorful, Beautiful, and lively! The city's pastries and live music made for an unforgettable experience. Don't miss the stunning views from Castelo de sao Jorge.",
       "rating": "⭐⭐⭐⭐⭐",
       "id": 6
     },
     {
       "name": "Vanessa C.",
       "country": "France",
-      "comment": "",
+      "comment": "After studying in paris my 2nd year of university-I could not wait to go back! The city is just as beautiful as it was when I left. I love paris so much...I highly recommend visiting the south of france as well. 2 weeks simply was not enough, but it will do for now.",
       "rating": "⭐⭐⭐⭐",
       "id": 7
     },
     {
       "name": "George H.",
       "country": "Germany",
-      "comment": "",
-      "rating": "⭐⭐",
+      "comment": "Oktoberfest is a party like no other! The beer tents, and traditional outfits made for an unforgettable experience. And the delicious food -the giant pretzels were the best I have ever had. A trip a don't really remember, but certainly won't forget",
+      "rating": "⭐⭐⭐⭐",
       "id": 8
     },
     {
       "name": "Sam T.",
       "country": "Italy",
-      "comment": "",
+      "comment": "If you have not been to Florence, this city is an art lover's paradise! There was beauty everywhere. And let's not forget the amazing Tuscan cuisine - I still dream about the pasta.",
       "rating": "⭐⭐⭐⭐⭐",
       "id": 9
     },
     {
       "name": "Steve S.",
       "country": "Portugal",
-      "comment": "",
+      "comment": "Porto is A wine lover's paradise! Sipping port while overlooking the Douro River was a highlight of my trip. Ribeira's historic district was also charming and picturesque.",
       "rating": "⭐⭐⭐",
       "id": 10
     },
     {
       "name": "Carolina M.",
       "country": "France",
-      "comment": "",
+      "comment": "If you're a foodie france is a must! the food is everything you've ever dreamed of and more. I'm so happy I got to visit with my husband and kiddos. they loved exploring the streets of paris. A great family vacation with memories that will last a lifetime.",
       "rating": "⭐⭐⭐⭐",
       "id": 11
     },
     {
       "name": " Ana p.",
       "country": "Portugal",
-      "comment": "",
+      "comment": "Sun, sand, and seafood - what's not to love? The stunning beaches and cliffs of the Algarve coast were perfect for relaxing. Lagos was a quaint town with delicious seafood and a taste of traditional Portuguese culture.",
       "rating": "⭐⭐⭐⭐",
       "id": 12
     },
@@ -127,7 +127,7 @@
     {
         "name": "luisa C.",
         "country": "Germany",
-        "comment": "",
+        "comment": "This city is so cool! The street art scene is amazing, and the nightlife is insane. Our hotel wasnt in the best location. We will be sure to find a place closer to the center of town next time.",
         "rating": "⭐⭐⭐",
         "id": 13
     },
@@ -135,7 +135,7 @@
     {
         "name": "Carly P.",
         "country": "Spain",
-        "comment": "",
+        "comment": "Barcelona - what a Vibrant city with amazing architecture and food. Loved La Sagrada Familia! Cannot wait to go back!",
         "rating": "⭐⭐⭐",
         "id": 14
     },
@@ -143,7 +143,7 @@
     {
         "name": "David S.",
         "country": "Italy",
-        "comment": "",
+        "comment": "it's a city on water - need I say more? The gondola ride through the canals was magical in Venice. The fresh seafood and Venetian wine were also highlights of my trip.",
         "rating": "⭐⭐⭐⭐",
         "id": 15
     },
@@ -151,7 +151,7 @@
     {
         "name": "melina C.",
         "country": "Spain",
-        "comment": "",
+        "comment": "oh my art! The Museums were absolutely stunning! We found a a lively spot to people-watch in the center of town. But let's talk about the churros - I still have dreams about them to this day",
         "rating": "⭐⭐⭐⭐",
         "id": 16
     }
