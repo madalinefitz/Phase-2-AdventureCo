@@ -72,6 +72,30 @@
       "comment": "good not great",
       "rating": 3,
       "id": 6
+    },
+    {
+      "name": "John",
+      "comment": "THE BEST",
+      "rating": 5,
+      "id": 7
+    },
+    {
+      "name": "John",
+      "comment": "THE BEST",
+      "rating": "⭐",
+      "id": 8
+    },
+    {
+      "name": "Madaline",
+      "comment": "THE BEST",
+      "rating": "5",
+      "id": 9
+    },
+    {
+      "name": "Madaline",
+      "comment": "THE BEST",
+      "rating": "⭐⭐⭐⭐⭐",
+      "id": 10
     }
   ]
 }

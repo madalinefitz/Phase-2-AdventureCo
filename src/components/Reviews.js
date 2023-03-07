@@ -35,9 +35,9 @@ function Reviews (){
     const handleSubmit = (e) => {
         e.preventDefault();
         const newReview = {
-            name,
-            comment,
-            rating: parseInt(rating),
+            name: name,
+            comment: comment,
+            rating: rating,
         };
     fetch("http://localhost:3001/reviews", {
         method: "POST",
@@ -58,47 +58,47 @@ function Reviews (){
         <div>
             <h1>Reviews</h1>
             <form onSubmit={handleSubmit} className="">
-        <h3>Tell Us What You Think!</h3>
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter Your Name..."
-          className="input-text"
-          value={name}
-          onChange={handleNameChange}
-          
-        />
-        <br />
-        <input
-          type="text"
-          name="Comment"
-          placeholder="..."
-          className="input-text"
-          value={comment}
-          onChange={handleCommentChange}
-      
-        />
-        <br />
-        <select
-          name="rating"
-          className="input-text"
-          value={rating}
-          onChange={handleRatingChange}
-        >
-         <option value="">Select a rating</option>   
-         <option value="1"> ⭐</option>
-         <option value="2"> ⭐⭐</option>
-         <option value="3"> ⭐⭐⭐</option>
-         <option value="4"> ⭐⭐⭐⭐</option>
-         <option value="5"> ⭐⭐⭐⭐⭐</option>
-        </select>
-        <br />
-        <input
-          type="submit"
-          name="submit"
-          value="Submit Review"
-          className="submit"
-        />
+            <h3>Tell Us What You Think!</h3>
+            <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name..."
+            className="input-text"
+            value={name}
+            onChange={handleNameChange}
+            
+            />
+            <br />
+            <input
+            type="text"
+            name="Comment"
+            placeholder="Enter review..."
+            className="input-text"
+            value={comment}
+            onChange={handleCommentChange}
+        
+            />
+            <br />
+            <select
+            name="rating"
+            className="input-text"
+            value={rating}
+            onChange={handleRatingChange}
+            >
+                <option value="">Select a rating</option>   
+                <option value="⭐"> ⭐</option>
+                <option value="⭐⭐"> ⭐⭐</option>
+                <option value="⭐⭐⭐"> ⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐"> ⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐⭐"> ⭐⭐⭐⭐⭐</option>
+            </select>
+            <br />
+            <input
+            type="submit"
+            name="submit"
+            value="Submit Review"
+            className="submit"
+            />
       </form>
       {reviewComponent}
         </div>
