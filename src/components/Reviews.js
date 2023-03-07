@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ReviewCard from "./ReviewCard";
+import { Button, Form, Message } from 'semantic-ui-react'
 
 function Reviews (){
     const [ name, setName] = useState("")
@@ -50,26 +51,24 @@ function Reviews (){
     return (
         <div>
             <h1>Reviews</h1>
-            <form onSubmit={handleSubmit} className="">
-                <h3>Tell Us What You Think!</h3>
-                <input
-                    type="text"
+            <Form success onSubmit={handleSubmit} className="">Tell Us What You Think!
+                <Form.Input
                     label="Name"
                     placeholder="Enter Your Name..."
                     value={name}
                     onChange={handleNameChange}
                 
                 />
-                <br />
-                <input
-                    type="text"
+                <Form.Input
+                    label="Review"
                     placeholder="Enter review..."
                     value={comment}
                     onChange={handleCommentChange}
             
                 />
-                <br />
-                <select
+                <Form.Field
+                    control='select'
+                    label="Review"
                     value={rating}
                     onChange={handleRatingChange}
                 >
@@ -79,14 +78,15 @@ function Reviews (){
                         <option value="⭐⭐⭐"> ⭐⭐⭐</option>
                         <option value="⭐⭐⭐⭐"> ⭐⭐⭐⭐</option>
                         <option value="⭐⭐⭐⭐⭐"> ⭐⭐⭐⭐⭐</option>
-                        
-                </select>
-                <br />
-                <input
-                    type="submit"
-                    value="Submit Review"
+
+                </Form.Field>
+                <Message
+                    success
+                    header='Review Completed'
+                    content="Thank you for your input!"
                 />
-            </form>
+                <Button>Submit</Button>
+            </Form>
       
             {reviewComponent}
 

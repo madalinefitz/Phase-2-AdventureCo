@@ -1,6 +1,6 @@
 import DestinationCard from "./DestinationCard.js";
 import {useState, useEffect} from "react";
-
+import { Input } from 'semantic-ui-react'
 
 
 function Destinations () {
@@ -30,13 +30,7 @@ function Destinations () {
 
     return (
         <div>
-            <input type="text"
-            name="search"
-            placeholder="Where to...?"
-            className="input-text"
-            onChange={handleSearch}>
-
-            </input>
+            <Input icon='search' placeholder="Where to...?" onChange={handleSearch} />
             <h1>Destinations</h1>
             {destinationComponent}
         </div>
