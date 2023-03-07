@@ -6,6 +6,7 @@ import Reviews from "./Reviews";
 import NavBar from "./NavBar"
 import Destinations from "./Destinations"
 
+
 function App(){
   
 
