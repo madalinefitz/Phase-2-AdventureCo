@@ -20,17 +20,52 @@ function Reviews (){
         />
     })
 
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+    };
+
+    const handleCommentChange = (e) => {
+        setComment(e.target.value);
+    };
+
+    const handleRatingChange = (e) => {
+        setRating(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const newReview = {
+            name,
+            comment,
+            rating: parseInt(rating),
+        };
+    fetch("http://localhost:3001/reviews", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(newReview),
+    })
+       .then((r) => r.json())
+       .then((data) => {
+        setReviews([...reviews, data]);
+        setName("");
+        setComment("");
+        setRating("");
+       });
+    };
+
 
     return (
         <div>
             <h1>Reviews</h1>
-            <form onSubmit={null} className="">
+            <form onSubmit={handleSubmit} className="">
         <h3>Tell Us What You Think!</h3>
         <input
           type="text"
           name="name"
           placeholder="Enter Your Name..."
           className="input-text"
+          value={name}
+          onChange={handleNameChange}
           
         />
         <br />
@@ -39,16 +74,24 @@ function Reviews (){
           name="Comment"
           placeholder="..."
           className="input-text"
+          value={comment}
+          onChange={handleCommentChange}
       
         />
         <br />
-        <input
-          type="text"
-          name="Rating"
-          placeholder="..."
+        <select
+          name="rating"
           className="input-text"
-      
-        />
+          value={rating}
+          onChange={handleRatingChange}
+        >
+         <option value="">Select a rating</option>   
+         <option value="1"> ⭐</option>
+         <option value="2"> ⭐⭐</option>
+         <option value="3"> ⭐⭐⭐</option>
+         <option value="4"> ⭐⭐⭐⭐</option>
+         <option value="5"> ⭐⭐⭐⭐⭐</option>
+        </select>
         <br />
         <input
           type="submit"
@@ -59,7 +102,7 @@ function Reviews (){
       </form>
       {reviewComponent}
         </div>
-    )
+    );
 }
 
 export default Reviews;
