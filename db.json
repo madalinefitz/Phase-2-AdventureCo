@@ -36,78 +36,125 @@
       "food": "käsespätzle, wurst, apfelstrudel"
     }
   ],
-  "reviews": [
+
+
+    "stories": [
     {
       "id": 1,
-      "name": "Jane Doe",
-      "comment": "Had the best time in Portugal!",
-      "rating": 5
+      "name": "Lola M.",
+      "country": "Italy",
+      "comment": "had the best time celebrating my 60th birthday drinking wine and eating so much delicious food throughout Itália! The trip of a lifetime. ",
+      "rating": "⭐⭐⭐⭐"
     },
     {
-      "name": "Vanessa Coelho",
-      "comment": "we love italia!",
-      "rating": 5,
+      "name": "John K.",
+      "country": "Germany",
+      "comment": "If you are looking for a good time and good beer? There is only one place to go! Berlin, Germany. A trip we will never forget. ",
+      "rating": "⭐⭐⭐",
       "id": 2
     },
     {
-      "name": "Mike Smith",
-      "comment": "take me back to Paris ",
-      "rating": 5,
+      "name": "Mike S.",
+      "country": "Spain",
+      "comment": "Had the best time in Barcelona with my now fiance! The music, the food the culture, we were speachless.  ",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 3
     },
     {
-      "name": "John John",
-      "comment": "I'll be back!",
-      "rating": null,
+      "name": "Eliut L.",
+      "country": "France",
+      "comment": "The food! the fashion! Our trip to Paris, France was a dream come true. There is nothing like a freshly baked croissant in the morning with a view of the Eiffel Tower. ",
+      "rating": "⭐⭐⭐⭐",
       "id": 4
     },
     {
-      "name": "mary lamb",
-      "comment": "more pasta please",
-      "rating": null,
+      "name": "Cat M.",
+      "country": "Italy",
+      "comment": "", 
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 5
     },
     {
-      "name": "bob dog",
-      "comment": "good not great",
-      "rating": 3,
+      "name": "Madaline F.",
+      "country": "Portugal",
+      "comment": "",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 6
     },
     {
-      "name": "John",
-      "comment": "THE BEST",
-      "rating": 5,
+      "name": "Vanessa C.",
+      "country": "France",
+      "comment": "",
+      "rating": "⭐⭐⭐⭐",
       "id": 7
     },
     {
-      "name": "John",
-      "comment": "THE BEST",
-      "rating": "⭐",
+      "name": "George H.",
+      "country": "Germany",
+      "comment": "",
+      "rating": "⭐⭐",
       "id": 8
     },
     {
-      "name": "Madaline",
-      "comment": "THE BEST",
-      "rating": "5",
+      "name": "Sam T.",
+      "country": "Italy",
+      "comment": "",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 9
     },
     {
-      "name": "Madaline",
-      "comment": "THE BEST",
-      "rating": "⭐⭐⭐⭐⭐",
+      "name": "Steve S.",
+      "country": "Portugal",
+      "comment": "",
+      "rating": "⭐⭐⭐",
       "id": 10
     },
     {
-      "name": "hello",
-      "comment": "great",
-      "rating": "⭐⭐⭐",
+      "name": "Carolina M.",
+      "country": "France",
+      "comment": "",
+      "rating": "⭐⭐⭐⭐",
       "id": 11
     },
     {
-      "name": "Madaline",
-      "comment": "Good",
+      "name": " Ana p.",
+      "country": "Portugal",
+      "comment": "",
       "rating": "⭐⭐⭐⭐",
       "id": 12
+    },
+  
+    {
+        "name": "luisa C.",
+        "country": "Germany",
+        "comment": "",
+        "rating": "⭐⭐⭐",
+        "id": 13
+    },
+
+    {
+        "name": "Carly P.",
+        "country": "Spain",
+        "comment": "",
+        "rating": "⭐⭐⭐",
+        "id": 14
+    },
+
+    {
+        "name": "David S.",
+        "country": "Italy",
+        "comment": "",
+        "rating": "⭐⭐⭐⭐",
+        "id": 15
+    },
+
+    {
+        "name": "melina C.",
+        "country": "Spain",
+        "comment": "",
+        "rating": "⭐⭐⭐⭐",
+        "id": 16
     }
-  ]
+ ]
+
 }
