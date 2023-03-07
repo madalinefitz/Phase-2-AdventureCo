@@ -2,6 +2,7 @@ import { Image } from 'semantic-ui-react';
 import { useState } from 'react'
 
 const Front = ({country, image}) => {
+    
     return (
         <div>
             <Image size='large' circular src={image} alt={country}/>

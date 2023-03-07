@@ -1,4 +1,4 @@
-function ReviewCard({name, comment, rating }){
+function StoryCard({name, comment, rating }){
 
  
     return(
@@ -11,4 +11,4 @@ function ReviewCard({name, comment, rating }){
     )
 }
 
-export default ReviewCard;
+export default StoryCard;

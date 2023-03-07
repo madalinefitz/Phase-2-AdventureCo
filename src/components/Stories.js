@@ -1,48 +1,52 @@
 import React, {useState, useEffect} from "react";
-import ReviewCard from "./ReviewCard";
-import { Button, Form, Message } from 'semantic-ui-react'
+import StoryCard from "./StoryCard";
+import { Button, Form, Message, Dropdown } from 'semantic-ui-react'
 
-function Reviews (){
+function Stories(){
     const [ name, setName] = useState("")
-    const [ comment, setComment] = useState("")
+    const [ country, setCountry] = useState("")
+    const [ story, setStory] = useState("")
     const [ rating, setRating] = useState("")
 
-    const [ reviews, setReviews] = useState([]);
+    const [ stories, setStories] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/reviews")
+        fetch("http://localhost:3001/stories")
         .then(r => r.json())
-        .then(data => setReviews(data))   
+        .then(data => setStories(data))   
     }, [])
     
-    const reviewComponent = reviews.map (review => {
-        return <ReviewCard key={review.id} {...review} />
+    const storyComponent = stories.map (story => {
+        return <StoryCard key={story.id} {...story} />
         })
 
     const handleNameChange = (e) => setName(e.target.value)
-    const handleCommentChange = (e) => setComment(e.target.value)
+    const handleCountryChange = (e) => setCountry(e.target.value)
+    const handleCommentChange = (e) => setStory(e.target.value)
     const handleRatingChange = (e) => setRating(e.target.value)
 
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const newReview = {
+        const newStory = {
             name: name,
-            comment: comment,
+            country: country,
+            story: story,
             rating: rating,
         }
     
         fetch("http://localhost:3001/reviews", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
-                body: JSON.stringify(newReview),
+                body: JSON.stringify(newStory),
         })
             .then((r) => r.json())
             .then((data) => {
-                setReviews([...reviews, data])
+                setStories([...stories, data])
                 setName("")
-                setComment("")
+                setCountry("")
+                setStory("")
                 setRating("")
         })
     }
@@ -50,7 +54,7 @@ function Reviews (){
 
     return (
         <div>
-            <h1>Reviews</h1>
+            <h1>Travel Stories</h1>
             <Form success onSubmit={handleSubmit} className="">Tell Us What You Think!
                 <Form.Input
                     label="Name"
@@ -59,20 +63,34 @@ function Reviews (){
                     onChange={handleNameChange}
                 
                 />
+                <Form.Field
+                    control='select'
+                    label="Country you visited"
+                    value={country}
+                    onChange={handleCountryChange}
+                >
+                        <option value="">Select Your Country</option>   
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Portugal">Protugal</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Italy">Italy</option>
+
+                </Form.Field>
                 <Form.Input
                     label="Review"
                     placeholder="Enter review..."
-                    value={comment}
+                    value={story}
                     onChange={handleCommentChange}
             
                 />
                 <Form.Field
                     control='select'
-                    label="Review"
+                    label="Rating"
                     value={rating}
                     onChange={handleRatingChange}
                 >
-                        <option value="">Select a rating</option>   
+                        <option value="">Rate your trip!</option>   
                         <option value="⭐"> ⭐</option>
                         <option value="⭐⭐"> ⭐⭐</option>
                         <option value="⭐⭐⭐"> ⭐⭐⭐</option>
@@ -82,16 +100,16 @@ function Reviews (){
                 </Form.Field>
                 <Message
                     success
-                    header='Review Completed'
-                    content="Thank you for your input!"
+                    header='Story Submitted'
+                    content="Thank you for submitting your travel story!"
                 />
                 <Button>Submit</Button>
             </Form>
       
-            {reviewComponent}
+            {storyComponent}
 
         </div>
     );
 }
 
-export default Reviews;
+export default Stories;

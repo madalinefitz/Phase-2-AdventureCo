@@ -17,11 +17,12 @@ function NavBar(){
                 Destinations
             </NavLink>
             <NavLink
-                to="/reviews"
+                to="/travel-stories"
                 exact
             >
-                Reviews
+                Travel Stories
             </NavLink>
+        
         </div>
 
     )

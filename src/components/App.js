@@ -2,7 +2,7 @@
 import { Route, Switch } from "react-router-dom";
 import React from "react";
 import Home from "./Home";
-import Reviews from "./Reviews";
+import Stories from "./Stories";
 import NavBar from "./NavBar"
 import Destinations from "./Destinations"
 
@@ -15,8 +15,8 @@ function App(){
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/reviews">
-          <Reviews />
+        <Route exact path="/travel-stories">
+          <Stories />
         </Route>
       </Switch>
 
