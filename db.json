@@ -36,9 +36,7 @@
       "food": "käsespätzle, wurst, apfelstrudel"
     }
   ],
-
-
-    "stories": [
+  "stories": [
     {
       "id": 1,
       "name": "Lola M.",
@@ -123,7 +121,6 @@
       "rating": "⭐⭐⭐⭐",
       "id": 12
     },
-  
     {
         "name": "luisa C.",
         "country": "Germany",
@@ -131,7 +128,6 @@
         "rating": "⭐⭐⭐",
         "id": 13
     },
-
     {
         "name": "Carly P.",
         "country": "Spain",
@@ -139,7 +135,6 @@
         "rating": "⭐⭐⭐",
         "id": 14
     },
-
     {
         "name": "David S.",
         "country": "Italy",
@@ -147,7 +142,6 @@
         "rating": "⭐⭐⭐⭐",
         "id": 15
     },
-
     {
         "name": "melina C.",
         "country": "Spain",
@@ -155,6 +149,5 @@
         "rating": "⭐⭐⭐⭐",
         "id": 16
     }
- ]
-
+  ]
 }

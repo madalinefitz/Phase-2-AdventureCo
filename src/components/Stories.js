@@ -3,11 +3,7 @@ import StoryCard from "./StoryCard";
 import { Button, Form, Message, Dropdown } from 'semantic-ui-react'
 
 function Stories(){
-    const [ name, setName] = useState("")
-    const [ country, setCountry] = useState("")
-    const [ story, setStory] = useState("")
-    const [ rating, setRating] = useState("")
-
+    //Story Posts
     const [ stories, setStories] = useState([]);
 
     useEffect(() => {
@@ -15,16 +11,26 @@ function Stories(){
         .then(r => r.json())
         .then(data => setStories(data))   
     }, [])
-    
+
     const storyComponent = stories.map (story => {
         return <StoryCard key={story.id} {...story} />
         })
+    
+    //Form
+    const [ name, setName] = useState("")
+    const [ country, setCountry] = useState("")
+    const [ story, setStory] = useState("")
+    const [ rating, setRating] = useState("")
 
     const handleNameChange = (e) => setName(e.target.value)
     const handleCountryChange = (e) => setCountry(e.target.value)
     const handleCommentChange = (e) => setStory(e.target.value)
     const handleRatingChange = (e) => setRating(e.target.value)
-
+    
+    const [showMessage, setShowMessage] = useState('')
+    const message = () => {
+        setShowMessage(<Message  success header='Story Submitted' content="Thank you for submitting your travel story!" />)
+    } 
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -36,7 +42,7 @@ function Stories(){
             rating: rating,
         }
     
-        fetch("http://localhost:3001/reviews", {
+        fetch("http://localhost:3001/stories", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(newStory),
@@ -48,14 +54,15 @@ function Stories(){
                 setCountry("")
                 setStory("")
                 setRating("")
-        })
+                message(showMessage)
+        })  
     }
 
 
     return (
         <div>
             <h1>Travel Stories</h1>
-            <Form success onSubmit={handleSubmit} className="">Tell Us What You Think!
+            <Form success onSubmit={handleSubmit} className="" contentAlign="center">Tell Us What You Think!
                 <Form.Input
                     label="Name"
                     placeholder="Enter Your Name..."
@@ -98,16 +105,10 @@ function Stories(){
                         <option value="⭐⭐⭐⭐⭐"> ⭐⭐⭐⭐⭐</option>
 
                 </Form.Field>
-                <Message
-                    success
-                    header='Story Submitted'
-                    content="Thank you for submitting your travel story!"
-                />
                 <Button>Submit</Button>
             </Form>
-      
+            {showMessage}
             {storyComponent}
-
         </div>
     );
 }
