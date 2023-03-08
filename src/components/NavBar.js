@@ -1,17 +1,6 @@
-import { useState } from 'react';
 import { NavLink } from "react-router-dom";
+import styles from "./mystyle.module.css";
 
-
-    
-const linkStyle = {
-    margin: "5rem",
-    textDecoration: "none",
-    color: 'green',
-    textdecoration: "none",
-    fontsize: "100px"
-
-    
-}
 
 function NavBar(){
 
@@ -20,34 +9,29 @@ function NavBar(){
             <NavLink
                 to="/"
                 exact
-                style={linkStyle} 
+                className={styles.link} 
             >
                 Home
             </NavLink>
             <NavLink
                 to="/destinations"
                 exact
-                style={linkStyle}
-                
+                className={styles.link}
             >
                 Destinations
             </NavLink>
             <NavLink
                 to="/story-form"
                 exact
-                style={linkStyle}
+                className={styles.link}
             >
- 
                 Tell Us Your Story
             </NavLink>
             <NavLink
                 to="/stories"
                 exact
-                style={linkStyle}
-                
+                className={styles.link}
             >
-
-
                 Travel Stories
             </NavLink>
         
