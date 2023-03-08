@@ -1,6 +1,6 @@
 import DestinationCard from "./DestinationCard.js";
 import {useState, useEffect} from "react";
-import { Input, Grid, Header } from 'semantic-ui-react'
+import { Input, Grid, Header, Search } from 'semantic-ui-react'
 
 
 function Destinations () {
@@ -24,20 +24,17 @@ function Destinations () {
 
     const destinationComponent = searchedCountries.map (country => {
         return (
-            <Grid centered >
-                <Grid.Row relaxed="very" columns={3}>
-                    <DestinationCard key={country.id} {...country}/>
-                </Grid.Row>
-            </Grid>
+            <DestinationCard key={country.id} {...country}/>     
         )
     })
 
-
     return (
         <div>
-            <Input icon='search' placeholder="Where to...?" onChange={handleSearch} contentAlign="right"/>
+            <Search size= "large" icon='Search' placeholder="Where to...?" onChange={handleSearch}/>
             <Header textAlign="center" as="h1">Destinations</Header>
+            <Grid centered padded columns={4}>
             {destinationComponent}
+            </Grid>
         </div>
     )
     }
