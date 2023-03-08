@@ -63,6 +63,7 @@ function App(){
                 <option>Italy</option>
                 <option>Portugal</option>
                 <option>Spain</option>
+                <option>England</option>
               </select>
           </div>
           <div className={styles.scroller}>

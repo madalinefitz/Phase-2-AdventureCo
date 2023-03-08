@@ -68,6 +68,7 @@ function TellUsYourStories({handleNewStories}){
                         <option value="Portugal">Portugal</option>
                         <option value="Spain">Spain</option>
                         <option value="Italy">Italy</option>
+                        <option value="England">England</option>
                       
                 </Form.Field>
                 <Form.Input

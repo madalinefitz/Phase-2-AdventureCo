@@ -5,36 +5,55 @@
       "country": "France",
       "capital": "Paris",
       "image": "https://images.unsplash.com/photo-1500313830540-7b6650a74fd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "food": "croissant, baguette, macarons"
+      "backImage": "https://plus.unsplash.com/premium_photo-1658527202479-07030551e2d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+      "food": "\"The City of Love\""
     },
     {
       "id": 2,
       "country": "Italy",
       "capital": "Rome",
       "image": "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-      "food": "pasta, pizza, panna cotta"
+      "backImage": "https://images.unsplash.com/photo-1529155157179-963abcaa4949?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80",
+      "food": "\"The Eternal City\""
     },
     {
       "id": 3,
-      "country": "Spain",
-      "capital": "Madrid",
-      "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "food": "paella, tapas, gazpacho"
+      "country": "England",
+      "capital": "London",
+      "image": "https://images.unsplash.com/photo-1520986606214-8b456906c813?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "backImage": "https://images.unsplash.com/photo-1448906654166-444d494666b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "food": "\"The Square Mile\""
     },
+
     {
       "id": 4,
       "country": "Portugal",
       "capital": "Lisbon",
       "image": "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
-      "food": "pastel de nata (custard tart), polvo à lagareiro, leitão assado"
+      "backImage": "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "food": "\"The City of Seven Hills\""
     },
     {
       "id": 5,
+      "country": "Spain",
+      "capital": "Madrid",
+      "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "backImage": "https://images.unsplash.com/photo-1529068726703-d4dfa1c99b99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+      "food": "\"The Heart of Spain\""
+    },
+    {
+      "id": 6,
       "country": "Germany",
       "capital": "Berlin",
       "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "food": "käsespätzle, wurst, apfelstrudel"
+      "backImage": "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+      "food": "\"The City of Light\""
     }
+
+
+
+
+
   ],
   "stories": [
     {
@@ -81,8 +100,8 @@
     },
     {
       "name": "Vanessa C.",
-      "country": "France",
-      "story": "After studying in paris my 2nd year of university-I could not wait to go back! The city is just as beautiful as it was when I left. I love paris so much...I highly recommend visiting the south of france as well. 2 weeks simply was not enough, but it will do for now.",
+      "country": "England",
+      "story": "After studying in London my 2nd year of university-I could not wait to go back! The city is just as beautiful as it was when I left. I love this city so much...I highly recommend taking the trip-with family or friends. 2 weeks simply was not enough, but it will do for now.",
       "rating": "⭐⭐⭐⭐",
       "id": 7
     },
@@ -115,7 +134,7 @@
       "id": 11
     },
     {
-      "name": " Ana p.",
+      "name": " Ana P.",
       "country": "Portugal",
       "story": "Sun, sand, and seafood - what's not to love? The stunning beaches and cliffs of the Algarve coast were perfect for relaxing. Lagos was a quaint town with delicious seafood and a taste of traditional Portuguese culture.",
       "rating": "⭐⭐⭐⭐",
@@ -123,7 +142,7 @@
     },
     {
       "name": "luisa C.",
-      "country": "Germany",
+      "country": "England",
       "story": "This city is so cool! The street art scene is amazing, and the nightlife is insane. Our hotel wasnt in the best location. We will be sure to find a place closer to the center of town next time.",
       "rating": "⭐⭐⭐",
       "id": 13
@@ -150,46 +169,11 @@
       "id": 16
     },
     {
-      "name": "csildhaidch",
-      "country": "Portugal",
-      "story": "xhosaihdoasihpafh",
+      "name": "Kelly M.",
+      "country": "Germany",
+      "story": "We'll be back no doubt!",
       "rating": "⭐⭐⭐⭐⭐",
       "id": 17
-    },
-    {
-      "name": "me",
-      "country": "Portugal",
-      "story": "great!",
-      "rating": "",
-      "id": 18
-    },
-    {
-      "name": "vanessa",
-      "country": "Portugal",
-      "story": "great",
-      "rating": "⭐⭐⭐⭐",
-      "id": 19
-    },
-    {
-      "name": "",
-      "country": "",
-      "story": "",
-      "rating": "",
-      "id": 20
-    },
-    {
-      "name": "vansiwdoh",
-      "country": "Germany",
-      "story": "xshaohc",
-      "rating": "⭐⭐⭐",
-      "id": 21
-    },
-    {
-      "name": "",
-      "country": "",
-      "story": "",
-      "rating": "",
-      "id": 22
     }
   ]
 }

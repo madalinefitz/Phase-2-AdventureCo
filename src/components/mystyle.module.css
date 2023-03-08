@@ -38,9 +38,10 @@
 /* StoryCard */
 .scroller {
   
-  width: 900px;
-  height: 300px;
+  width: 1000px;
+  height: 400px;
   overflow-y: scroll;
+  padding-top: 10px;
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
   margin: 0 auto;
@@ -86,6 +87,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
 
 }
+
+
+/* add white containers to the page */
+.info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  max-width: 600px;
+}
+
+/* style the headings */
+.one {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.two {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.three {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
 

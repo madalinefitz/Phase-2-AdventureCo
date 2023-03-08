@@ -25,7 +25,8 @@ function Destinations () {
 
     const destinationComponent = searchedCountries.map (country => {
         return (
-            <DestinationCard key={country.id} {...country}/>     
+            <DestinationCard key={country.id} {...country}/>    
+             
         )
     })
 
@@ -33,10 +34,12 @@ function Destinations () {
         <div>
             <Input className={styles.search} size="big" icon="search" placeholder="Where to?" onChange={handleSearch}/>
             <h1 className={styles.destHeader}>Destinations in Europe</h1>
-            <Grid centered padded itemsPerRow={3}>
-            {destinationComponent}
+             <Grid centered padded itemsPerRow={3}>
+           {destinationComponent}
             </Grid>
         </div>
+        
+       
     )
     }
 
