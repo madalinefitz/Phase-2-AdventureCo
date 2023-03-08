@@ -18,13 +18,29 @@ function App(){
       .then(data => setStories(data))   
   }, [])
 
-  const storyComponent = stories.map (story => {
-      return <StoryCard key={story.id} {...story} />
-      })
+  
   
   const handleNewStories =( newStory) => {
     setStories([...stories, newStory])
   }
+
+  const [filterCountry, setFilterCountry]= useState('')
+  const handleFilter = (e) => {
+    setFilterCountry(e.target.value)
+  }
+  const filterStories = stories.filter(story => {
+    if (story.country.includes(filterCountry)) {
+      return true
+    } else {
+    if (filterCountry === "Select Country") {
+      return true
+    }
+    }
+  })
+
+  const storyComponent = filterStories.map (story => {
+    return <StoryCard key={story.id} {...story} />
+    })
 
   return (
     <div>
@@ -38,6 +54,14 @@ function App(){
       <Switch>
         <Route exact path="/stories">
           <h1>Travel Stories</h1>
+          <select onChange={handleFilter}>
+            <option>Select Country</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Italy</option>
+            <option>Portugal</option>
+            <option>Spain</option>
+          </select>
           {storyComponent}
         </Route>
       </Switch>

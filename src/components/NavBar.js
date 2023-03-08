@@ -4,10 +4,12 @@ import { NavLink } from "react-router-dom";
 
     
 const linkStyle = {
-    margin: "1rem",
+    margin: "5rem",
     textDecoration: "none",
     color: 'green',
     textdecoration: "none",
+    fontsize: "100px"
+
     
 }
 
