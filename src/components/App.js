@@ -64,6 +64,9 @@ function App(){
                 <option>Portugal</option>
                 <option>Spain</option>
                 <option>England</option>
+                <option>Switzerland</option>
+                <option>Greece</option>
+                <option>Croatia</option>
               </select>
           </div>
           <div className={styles.scroller}>
@@ -85,6 +88,7 @@ function App(){
           </Route>
         </Switch>
     </div>
+    
   );
 }
 

@@ -48,8 +48,31 @@
       "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "backImage": "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
       "food": "\"The City of Light\""
+    },
+    {
+      "id": 7,
+      "country": "Croatia",
+      "capital": "Zagreb",
+      "image": "https://images.unsplash.com/photo-1626699848008-7e419bc4e237?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+      "backImage": "https://images.unsplash.com/photo-1532443911034-2d9815167b82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "food": "\"The White City\""
+    },
+    {
+      "id": 8,
+      "country": "Switzerland",
+      "capital": "Bern",
+      "image": "https://images.unsplash.com/photo-1594069758873-e79e9075eb7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "backImage": "https://images.unsplash.com/photo-1508789454646-bef72439f197?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "food": "\"The City of Bears\""
+    },
+    {
+      "id": 9,
+      "country": "Greece",
+      "capital": "Athens",
+      "image": "https://images.unsplash.com/photo-1545424436-3cc26c0ac5a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80",
+      "backImage": "https://images.unsplash.com/photo-1553774159-7616870d8de0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "food": "\"The City of The Gods\""
     }
-
 
 
 
@@ -57,16 +80,16 @@
   ],
   "stories": [
     {
-      "id": 1,
-      "name": "Lola M.",
-      "country": "Italy",
-      "story": "had the best time celebrating my 60th birthday drinking wine and eating so much delicious food throughout Itália! The trip of a lifetime. ",
-      "rating": "⭐⭐⭐⭐"
+      "name": " Ana P.",
+      "country": "Portugal",
+      "story": "Sun, sand, and seafood - what's not to love? The stunning beaches and cliffs of the Algarve coast were perfect for relaxing. Lagos was a quaint town with delicious seafood and a taste of traditional Portuguese culture.",
+      "rating": "⭐⭐⭐⭐",
+      "id": 1
     },
     {
-      "name": "John K.",
+      "name": "Rui C.",
       "country": "Germany",
-      "story": "If you are looking for a good time and good beer? There is only one place to go! Berlin, Germany. A trip we will never forget. ",
+      "story": "If you are looking for beautiful views, stunning architecture, and a good beer? There is only one place to go! Berlin, Germany. A trip we will never forget.",
       "rating": "⭐⭐⭐",
       "id": 2
     },
@@ -133,12 +156,13 @@
       "rating": "⭐⭐⭐⭐",
       "id": 11
     },
+   
     {
-      "name": " Ana P.",
-      "country": "Portugal",
-      "story": "Sun, sand, and seafood - what's not to love? The stunning beaches and cliffs of the Algarve coast were perfect for relaxing. Lagos was a quaint town with delicious seafood and a taste of traditional Portuguese culture.",
-      "rating": "⭐⭐⭐⭐",
-      "id": 12
+      "id": 12,
+      "name": "Lola M.",
+      "country": "Italy",
+      "story": "had the best time celebrating my 60th birthday drinking wine and eating so much delicious food throughout Itália! The trip of a lifetime. ",
+      "rating": "⭐⭐⭐⭐"
     },
     {
       "name": "luisa C.",
@@ -163,17 +187,74 @@
     },
     {
       "name": "Melina C.",
-      "country": "Spain",
-      "story": "oh my art! The Museums were absolutely stunning! We found a a lively spot to people-watch in the center of town. But let's talk about the churros - I still have dreams about them to this day",
+      "country": "Greece",
+      "story": "oh my art! The Museums were absolutely stunning! We found a a lively spot to people-watch in the center of town. But let's talk about the beaches - I still have dreams about them to this day",
       "rating": "⭐⭐⭐⭐",
       "id": 16
     },
     {
       "name": "Kelly M.",
-      "country": "Germany",
+      "country": "Switzerland",
       "story": "We'll be back no doubt!",
       "rating": "⭐⭐⭐⭐⭐",
       "id": 17
+    },
+    {
+      "name": "Kevin S.",
+      "country": "Croatia",
+      "story": "If you're looking for some fun in the sun Croatia is a must! whether you're on water or on land the party just never stops. I can't wait to go back. pack your sunscreen.",
+      "rating": "⭐⭐⭐",
+      "id": 18
+    },
+    {
+      "name": "Pablo A.",
+      "country": "Greece",
+      "story": "The food, the weather, the views...I could go on and on and on about how beautiful this country is. The water is blue, and it's waiting for you!",
+      "rating": "⭐⭐⭐⭐",
+      "id": 19
+    },
+    {
+      "name": "Kimberly B.",
+      "country": "Croatia",
+      "story": "If you're looking for the perfect girl trip destination? look no further-croatia is the wave!",
+      "rating": "⭐⭐⭐⭐",
+      "id": 20
+    },
+    {
+      "name": "Adam L.",
+      "country": "Greece",
+      "story": "Did someone say beach party? Greece is the spot. great food, wonderful people, and memories that will last a lifetime!",
+      "rating": "⭐⭐⭐⭐⭐",
+      "id": 21
+    },
+    {
+      "name": "Ben H.",
+      "country": "Switzerland",
+      "story": "The beer was GREAT! kept us warm on that mountian while we were waiting for some of our buddies to come save us. Still a great time, but I had to deduct some stars.",
+      "rating": "⭐⭐",
+      "id": 22
+    },
+    {
+      "name": "Ashley S.",
+      "country": "Croatia",
+      "story": "You'll find me on a boat sailing through this beautiful country again next year!",
+      "rating": "⭐⭐⭐⭐⭐",
+      "id": 23
+    },
+    {
+      "name": "Michelle L.",
+      "country": "Spain",
+      "story": "If you like good music, good food, beautiful architecture and all around good vibes? book a flight asap!",
+      "rating": "⭐⭐⭐⭐",
+      "id": 24
+    },
+    {
+      "name": "Joao P.",
+      "country": "Greece",
+      "story": "It was nothing like the movie.",
+      "rating": "⭐",
+      "id": 25
     }
+    
   ]
 }
