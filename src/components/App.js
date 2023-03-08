@@ -46,30 +46,28 @@ function App(){
     <div>
       <NavBar />
       <div className={styles.form}>
-      <Switch>
-        <Route exact path="/story-form">
-          <TellUsYourStories handleNewStories={handleNewStories} />
-        </Route>
-
-      </Switch>
-     </div>
+        <Switch>
+          <Route exact path="/story-form">
+            <TellUsYourStories handleNewStories={handleNewStories} />
+          </Route>
+        </Switch>
+      </div>
       <Switch>
         <Route exact path="/stories">
           <div className={styles.userStories}>
-          <div className={styles.header}>
-        <h1>Travel Stories</h1>
-          <select onChange={handleFilter}>
-            <option>Select Country</option>
-            <option>France</option>
-            <option>Germany</option>
-            <option>Italy</option>
-            <option>Portugal</option>
-            <option>Spain</option>
-          </select>
-        </div>
-        </div>
+            <h1 className={styles.headerStories}>Travel Stories</h1>
+              <select onChange={handleFilter}>
+                <option>Select Country</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Italy</option>
+                <option>Portugal</option>
+                <option>Spain</option>
+              </select>
+          </div>
           <div className={styles.scroller}>
-          {storyComponent}</div>
+            {storyComponent}
+          </div>
          </Route>
       </Switch>
 
@@ -79,11 +77,11 @@ function App(){
         </Route>
       </Switch>
 
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
     </div>
   );
 }

@@ -1,5 +1,13 @@
+/* App */
+.headerStories{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+}
 
-
+/* NavBar */
 .link {
     color: black;
     padding: 50px;
@@ -11,38 +19,73 @@
   margin: 30px;
 }
 
+/* Destinations */
+.search{
+  padding-left: 30px;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
 
-  .scroller {
-   
-    width: 900px;
-    height: 300px;
-    overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
-    margin: 0 auto;
-  }
-  
-  .header {
-    text-align: center;
-    margin: 50px 0;
-  }
+.destHeader{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+}
 
 
-  .form {
-    text-align: center;
-    background-image:url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/* StoryCard */
+.scroller {
   
-  }
+  width: 900px;
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+  margin: 0 auto;
+}
 
-  .userStories {
-    text-align: center;
-    background-image:url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  
-  }
-  
+.form {
+  text-align: center;
+  background-image:url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* TellUsYourStories */
+.headerTUYS {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+}
+
+
+/* Home */
+.homeHeader {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+}
+
+.hello {
+  text-align: center;
+  font-size: 80px;
+  vertical-align: middle;
+  margin-bottom: 100px;
+}
+
+.userStories {
+  text-align: center;
+  background-image:url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+

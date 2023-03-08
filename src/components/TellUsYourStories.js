@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from "react";
-import { Button, Form, Message,} from 'semantic-ui-react'
-import styles from "./mystyle.module.css";
+import React, {useState} from "react";
+import { Button, Form, Message,} from 'semantic-ui-react';
+import styles from "./mystyle.module.css"
 
 function TellUsYourStories({handleNewStories}){
-    //Form
     const [ name, setName] = useState("")
     const [ country, setCountry] = useState("")
     const [ story, setStory] = useState("")
@@ -48,16 +47,14 @@ function TellUsYourStories({handleNewStories}){
 
     return (
         <div style={{ maxWidth: "600px", margin: "0 auto"}}>
-            <h1 style={{ textAlign: "center" }}>Tell Us Your Story</h1>
-           
-
+            <h1 className={styles.headerStories}>Tell Us Your Story</h1>
+        
             <Form success onSubmit={handleSubmit} className="" contentAlign="center">
                 <Form.Input
                     label="Name"
                     placeholder="Enter Your Name..."
                     value={name}
                     onChange={handleNameChange}
-                
                 />
                 <Form.Field
                     control='select'
