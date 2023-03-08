@@ -5,7 +5,7 @@ import styles from "./mystyle.module.css";
 function NavBar(){
 
     return (
-        <div >
+        <div className={styles.NavBar}>
             <NavLink
                 to="/"
                 exact
