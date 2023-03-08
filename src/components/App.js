@@ -6,7 +6,7 @@ import TellUsYourStories from "./TellUsYourStories";
 import NavBar from "./NavBar";
 import Destinations from "./Destinations";
 import StoryCard from "./StoryCard";
-
+import styles from "./mystyle.module.css";
 
 
 function App(){
@@ -53,7 +53,8 @@ function App(){
 
       <Switch>
         <Route exact path="/stories">
-          <h1>Travel Stories</h1>
+          <div className={styles.header}>
+        <h1>Travel Stories</h1>
           <select onChange={handleFilter}>
             <option>Select Country</option>
             <option>France</option>
@@ -62,8 +63,10 @@ function App(){
             <option>Portugal</option>
             <option>Spain</option>
           </select>
-          {storyComponent}
-        </Route>
+        </div>
+          <div className={styles.scroller}>
+          {storyComponent}</div>
+         </Route>
       </Switch>
 
       <Switch>

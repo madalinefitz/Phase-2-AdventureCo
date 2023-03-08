@@ -5,9 +5,9 @@ function StoryCard({name, country, story, rating }){
  
     return(
         
-    
-   
-      
+        
+        
+        
         <Card centered style={{width: '80%'}}>
         <Card.Content>
             <Card.Header>{name}</Card.Header>

@@ -1,9 +1,9 @@
-
+import styles from "./mystyle.module.css";
 
 function Home(){
 
    return(
-        <div>
+        <div className={styles.homePage}>
             <h1>Home</h1>
         </div>
     )
