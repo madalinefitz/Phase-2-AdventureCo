@@ -45,14 +45,17 @@ function App(){
   return (
     <div>
       <NavBar />
+      <div className={styles.form}>
       <Switch>
         <Route exact path="/story-form">
           <TellUsYourStories handleNewStories={handleNewStories} />
         </Route>
-      </Switch>
 
+      </Switch>
+     </div>
       <Switch>
         <Route exact path="/stories">
+          <div className={styles.userStories}>
           <div className={styles.header}>
         <h1>Travel Stories</h1>
           <select onChange={handleFilter}>
@@ -63,6 +66,7 @@ function App(){
             <option>Portugal</option>
             <option>Spain</option>
           </select>
+        </div>
         </div>
           <div className={styles.scroller}>
           {storyComponent}</div>

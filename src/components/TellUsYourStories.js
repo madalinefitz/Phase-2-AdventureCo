@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { Button, Form, Message,} from 'semantic-ui-react'
+import styles from "./mystyle.module.css";
 
 function TellUsYourStories({handleNewStories}){
-
     //Form
     const [ name, setName] = useState("")
     const [ country, setCountry] = useState("")
@@ -49,7 +49,8 @@ function TellUsYourStories({handleNewStories}){
     return (
         <div style={{ maxWidth: "600px", margin: "0 auto"}}>
             <h1 style={{ textAlign: "center" }}>Tell Us Your Story</h1>
-        
+           
+
             <Form success onSubmit={handleSubmit} className="" contentAlign="center">
                 <Form.Input
                     label="Name"
@@ -70,7 +71,7 @@ function TellUsYourStories({handleNewStories}){
                         <option value="Portugal">Portugal</option>
                         <option value="Spain">Spain</option>
                         <option value="Italy">Italy</option>
-
+                      
                 </Form.Field>
                 <Form.Input
                     label="Review"
@@ -91,13 +92,11 @@ function TellUsYourStories({handleNewStories}){
                         <option value="⭐⭐⭐"> ⭐⭐⭐</option>
                         <option value="⭐⭐⭐⭐"> ⭐⭐⭐⭐</option>
                         <option value="⭐⭐⭐⭐⭐"> ⭐⭐⭐⭐⭐</option>
-
                 </Form.Field>
                 <Button>Submit</Button>
             </Form>
        
             {showMessage}
-            
         </div>
     );
 }
