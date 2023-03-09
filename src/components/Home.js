@@ -14,12 +14,12 @@ function Home(){
     const [allHellos, setAllHellos] = useState('')
     const [i, setI] = useState(0)
 
-    const hello =[ 'Hello', 'Buenos Dias', 'Bonjour', 'Guten Morgen' ]
+    const hello =[ 'Hello,', 'Buenos Días,', 'Bonjour,', 'Guten Tag,', 'Bom Dia,', 'Καλημέρα,', 'Dobar Dan,' ]
 
     const changeGreeting = setTimeout(() => { 
         setAllHellos(hello[i])
         setI((i + 1) % hello.length)
-        }, 1000); 
+        }, 1500); 
 
     const handleGreetingChange = (e)=>{
         changeGreeting(e.target.value)
@@ -28,7 +28,7 @@ function Home(){
    return(
             <div>
                 <h1 className={styles.hello} onChange={handleGreetingChange}>{allHellos}</h1>
-                <h1 className={styles.homeHeader}>Welcome to the Big World</h1>
+                <h1 className={styles.homeHeader}>Welcome to Your Next Adventure!</h1>
                 { showEurope ? 
                     <div className={styles.europeMessage} >
                         <h2>You've selected a Summer Getaway to Europe!</h2>
