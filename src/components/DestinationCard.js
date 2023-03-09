@@ -1,27 +1,23 @@
-import {  Image, Card } from 'semantic-ui-react';
+import {  Image } from 'semantic-ui-react';
 import { useState } from 'react'
 import styles from "./mystyle.module.css";
 
 const Front = ({country, image}) => {
     return (
-        <div center style={{width: '73%'}}>
-            <>
-            <Image size='large' circular src={image} alt={country}/>
-            </>
-       </div>
+        <div>
+            <Image className={styles.cardImage} size='large' circular src={image} alt={country}/>
+        </div>
     )
 }
 
 const Back=({country, capital, food, backImage})=>{
     return (
-    <div center style={{width: '75%'}}>
-        <div className={styles.info}>
-            <Image size='large' circular src={backImage} alt={country}/>
+        <div >
+            <Image size='medium' circular src={backImage} alt={country} centered/>
             <div className={styles.one}><h2>{country}</h2></div>
             <div className={styles.two}><h3>{capital}</h3></div>
             <div className={styles.three}><h4>{food}</h4></div>
         </div>
-    </div>
     )
 };
 
@@ -34,7 +30,7 @@ function DestinationCard({country, capital, food, image, backImage}){
 
 
     return(
-        <div onClick={togglePhoto}>
+        <div onClick={togglePhoto} >
             {showPhoto ?
             <Front country={country} image={image}/> :
             <Back country={country} food={food} capital={capital} backImage={backImage}/>}

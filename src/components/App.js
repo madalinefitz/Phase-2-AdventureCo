@@ -71,12 +71,13 @@ function App(){
           </div>
          </Route>
       </Switch>
-
+      
       <Switch>
         <Route exact path="/destinations">
           <Destinations />
         </Route>
       </Switch>
+      
 
         <Switch>
           <Route exact path="/">

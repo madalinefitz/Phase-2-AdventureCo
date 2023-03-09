@@ -31,7 +31,7 @@ function Home(){
                 <h1 className={styles.hello} onChange={handleGreetingChange}>{allHellos}</h1>
                 <h1 className={styles.homeHeader}>Welcome to the Big World</h1>
                 { showEurope ? 
-                    <div className={styles.europeMessage}>
+                    <div className={styles.europeMessage} >
                         <h2>You've selected a Summer Getaway to Europe!</h2>
                         <p>Visit our Destinations page to see information about countries you can visit!</p>
                     </div> :
@@ -39,7 +39,7 @@ function Home(){
                 }
                 <img src="https://logodix.com/logo/27288.gif" alt="world map" className={styles.homeImg} useMap="#workmap"/>
                 <map name="workmap">
-                    <area shape="circle" coords="415, 85, 37" alt="Europe" onClick={handleClick} className={styles.Europe}/>
+                    <area shape="circle" coords="600, 125, 37" alt="Europe" onClick={handleClick} className={styles.Europe}/>
                 </map>
             </div>
     )

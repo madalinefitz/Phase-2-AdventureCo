@@ -35,34 +35,42 @@
 }
 
 /* add white containers to the page */
-.info {
+/* .info {
   background-color: white;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
-  vertical-align: top;
   width: 60%;
   max-width: 600px;
+  margin-left: 15%;
+  margin-right: 25%;
+} */
+
+.cardRows{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 20vw);
+  grid-gap: 80px;
 }
+
 
 /* style the headings */
 .one {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .two {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .three {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 2px;
+  text-align: center;
 }
 
 
@@ -152,4 +160,6 @@
 .Europe {
   cursor: pointer;
 }
+
+
 

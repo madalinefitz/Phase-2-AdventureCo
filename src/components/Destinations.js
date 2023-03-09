@@ -1,6 +1,6 @@
 import DestinationCard from "./DestinationCard.js";
 import {useState, useEffect} from "react";
-import { Grid, Input } from 'semantic-ui-react'
+import { Divider, Grid, Input } from 'semantic-ui-react'
 import styles from "./mystyle.module.css";
 
 
@@ -34,9 +34,9 @@ function Destinations () {
         <div>
             <Input className={styles.search} size="big" icon="search" placeholder="Where to?" onChange={handleSearch}/>
             <h1 className={styles.destHeader}>Destinations in Europe</h1>
-            <Grid centered padded columns={3}>
-            {destinationComponent}
-            </Grid>
+            <div className={styles.cardRows}>
+                {destinationComponent}
+            </div>
         </div>
         
        
