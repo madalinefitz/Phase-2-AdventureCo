@@ -15,7 +15,7 @@ function TellUsYourStories({handleNewStories}){
     
     const [showMessage, setShowMessage] = useState('')
     const message = () => {
-        setShowMessage(<Message  success header='Story Submitted' content="Thank you for submitting your travel story!" />)
+        setShowMessage(<Message success header='Story Submitted' content="Thank you for submitting your travel story!" />)
     } 
 
     const handleSubmit = (e) => {

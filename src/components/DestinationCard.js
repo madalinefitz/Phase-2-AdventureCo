@@ -15,14 +15,13 @@ const Front = ({country, image}) => {
 const Back=({country, capital, food, backImage})=>{
     return (
     <div center style={{width: '75%'}}>
-     <div className={styles.info}>
+        <div className={styles.info}>
             <Image size='large' circular src={backImage} alt={country}/>
-         <div className={styles.one}><h2>{country}</h2></div>
-        <div className={styles.two}><h3>{capital}</h3></div>
-        <div className={styles.three}><h4>{food}</h4></div>
-        
-            </div>
+            <div className={styles.one}><h2>{country}</h2></div>
+            <div className={styles.two}><h3>{capital}</h3></div>
+            <div className={styles.three}><h4>{food}</h4></div>
         </div>
+    </div>
     )
 };
 
