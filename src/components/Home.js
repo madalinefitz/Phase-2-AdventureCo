@@ -32,7 +32,8 @@ function Home(){
                 { showEurope ? 
                     <div className={styles.europeMessage} >
                         <h2>You've selected a Summer Getaway to Europe!</h2>
-                        <p>Visit our Destinations page to see information about countries you can visit!</p>
+                        <p>Check out our destinations page for some inspo</p>
+                        <h3>📍</h3>
                     </div> :
                     null  
                 }
