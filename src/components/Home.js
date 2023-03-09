@@ -1,6 +1,5 @@
 import styles from "./mystyle.module.css";
 import {useState} from 'react';
-import {Message} from 'semantic-ui-react'
 
 function Home(){
 
@@ -12,7 +11,7 @@ function Home(){
 
 
     //Multilingual Greeting
-    const [allHellos, setAllHellos] = useState('Hello')
+    const [allHellos, setAllHellos] = useState('')
     const [i, setI] = useState(0)
 
     const hello =[ 'Hello', 'Buenos Dias', 'Bonjour', 'Guten Morgen' ]
@@ -20,7 +19,7 @@ function Home(){
     const changeGreeting = setTimeout(() => { 
         setAllHellos(hello[i])
         setI((i + 1) % hello.length)
-        }, 3000); 
+        }, 1000); 
 
     const handleGreetingChange = (e)=>{
         changeGreeting(e.target.value)

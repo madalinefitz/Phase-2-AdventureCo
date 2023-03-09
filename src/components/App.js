@@ -5,8 +5,9 @@ import Home from "./Home";
 import TellUsYourStories from "./TellUsYourStories";
 import NavBar from "./NavBar";
 import Destinations from "./Destinations";
-import StoryCard from "./StoryCard";
+import TravelStories from "./TravelStories";
 import styles from "./mystyle.module.css";
+
 
 
 function App(){
@@ -24,23 +25,7 @@ function App(){
     setStories([...stories, newStory])
   }
 
-  const [filterCountry, setFilterCountry]= useState('')
-  const handleFilter = (e) => {
-    setFilterCountry(e.target.value)
-  }
-  const filterStories = stories.filter(story => {
-    if (story.country.includes(filterCountry)) {
-      return true
-    } else {
-    if (filterCountry === "Select Country") {
-      return true
-    }
-    }
-  })
 
-  const storyComponent = filterStories.map (story => {
-    return <StoryCard key={story.id} {...story} />
-    })
 
   return (
     <div>
@@ -54,24 +39,7 @@ function App(){
       </div>
       <Switch>
         <Route exact path="/stories">
-          <div className={styles.userStories}>
-            <h1 className={styles.headerStories}>Travel Stories</h1>
-              <select onChange={handleFilter}>
-                <option>Select Country</option>
-                <option>France</option>
-                <option>Germany</option>
-                <option>Italy</option>
-                <option>Portugal</option>
-                <option>Spain</option>
-                <option>England</option>
-                <option>Switzerland</option>
-                <option>Greece</option>
-                <option>Croatia</option>
-              </select>
-          </div>
-          <div className={styles.scroller}>
-            {storyComponent}
-          </div>
+          <TravelStories stories={stories}/>
          </Route>
       </Switch>
       

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Button, Form, Message,} from 'semantic-ui-react';
+import { Form, Message,} from 'semantic-ui-react';
 import styles from "./mystyle.module.css"
 
 function TellUsYourStories({handleNewStories}){
@@ -47,9 +47,9 @@ function TellUsYourStories({handleNewStories}){
 
     return (
         <div style={{ maxWidth: "600px", margin: "0 auto"}}>
-            <h1 className={styles.headerStories}>Tell Us Your Story</h1>
+            <h1 className={styles.headerTUYS}>Tell Us Your Story</h1>
         
-            <Form success onSubmit={handleSubmit} className="" contentAlign="center">
+            <Form success onSubmit={handleSubmit} >
                 <Form.Input
                     label="Name"
                     placeholder="Enter Your Name..."
@@ -75,8 +75,8 @@ function TellUsYourStories({handleNewStories}){
                       
                 </Form.Field>
                 <Form.Input
-                    label="Review"
-                    placeholder="Enter review..."
+                    label="Your Travel Story"
+                    placeholder="Travel story..."
                     value={story}
                     onChange={handleCommentChange}
             
@@ -94,7 +94,7 @@ function TellUsYourStories({handleNewStories}){
                         <option value="⭐⭐⭐⭐"> ⭐⭐⭐⭐</option>
                         <option value="⭐⭐⭐⭐⭐"> ⭐⭐⭐⭐⭐</option>
                 </Form.Field>
-                <Button>Submit</Button>
+                <button className={styles.submit}>Submit</button>
             </Form>
        
             {showMessage}

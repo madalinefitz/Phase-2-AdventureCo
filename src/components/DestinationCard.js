@@ -10,19 +10,19 @@ const Front = ({country, image}) => {
     )
 }
 
-const Back=({country, capital, food, backImage})=>{
+const Back=({country, capital, quote, backImage})=>{
     return (
         <div >
             <Image size='medium' circular src={backImage} alt={country} centered/>
             <div className={styles.one}><h2>{country}</h2></div>
             <div className={styles.two}><h3>{capital}</h3></div>
-            <div className={styles.three}><h4>{food}</h4></div>
+            <div className={styles.three}><h4>{quote}</h4></div>
         </div>
     )
 };
 
 
-function DestinationCard({country, capital, food, image, backImage}){
+function DestinationCard({country, capital, quote, image, backImage}){
     const [showPhoto, setShowPhoto] = useState(true)
     const togglePhoto = () => {
         setShowPhoto(showPhoto => !showPhoto)
@@ -33,7 +33,7 @@ function DestinationCard({country, capital, food, image, backImage}){
         <div onClick={togglePhoto} >
             {showPhoto ?
             <Front country={country} image={image}/> :
-            <Back country={country} food={food} capital={capital} backImage={backImage}/>}
+            <Back country={country} quote={quote} capital={capital} backImage={backImage}/>}
         </div>
     )
 }

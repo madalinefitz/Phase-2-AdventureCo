@@ -1,11 +1,9 @@
-import { Card } from 'semantic-ui-react'; 
+import { Card} from 'semantic-ui-react'; 
 
 
 
 function StoryCard({name, country, story, rating }){
 
-
- 
     return(
         <Card centered style={{width: '80%'}}>
             <Card.Content>

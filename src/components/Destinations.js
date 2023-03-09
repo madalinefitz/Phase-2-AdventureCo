@@ -1,6 +1,6 @@
 import DestinationCard from "./DestinationCard.js";
 import {useState, useEffect} from "react";
-import { Divider, Grid, Input } from 'semantic-ui-react'
+import { Input } from 'semantic-ui-react'
 import styles from "./mystyle.module.css";
 
 
